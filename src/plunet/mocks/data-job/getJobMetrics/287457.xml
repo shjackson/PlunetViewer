@@ -1,0 +1,21 @@
+<S:Envelope xmlns:S="http://www.w3.org/2003/05/soap-envelope">
+   <S:Body>
+      <ns2:getJobMetricsResponse xmlns:ns2="http://API.Integration/">
+         <JobMetricResult>
+            <statusCode>0</statusCode>
+            <statusCodeAlphanumeric>GEN_1</statusCodeAlphanumeric>
+            <statusMessage>OK</statusMessage>
+            <data>
+               <amounts>
+                  <baseUnitName>Words</baseUnitName>
+                  <grossQuantity>19.0</grossQuantity>
+                  <netQuantity>19.0</netQuantity>
+                  <serviceType>Translation</serviceType>
+               </amounts>
+               <totalPrice>0.95</totalPrice>
+               <totalPriceJobCurrency>0.95</totalPriceJobCurrency>
+            </data>
+         </JobMetricResult>
+      </ns2:getJobMetricsResponse>
+   </S:Body>
+</S:Envelope>

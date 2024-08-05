@@ -1,0 +1,36 @@
+{
+  "Page": {
+    "label-report": "Reports",
+    "label-kpis": "KPIs"
+  },
+  "Reports": {
+    "tab-generete-report": "Generate Report",
+    "tab-recent-reports": "Recent Reports"
+  },
+  "DatePicker": {
+    "date-picker-start": "Start date",
+    "date-picker-end": "End date"
+  },
+  "GenerateRport": {
+    "popup-content": "Pick a report",
+    "btn-get-report": "Get Report",
+    "btn-cancel-report": "Reset"
+  },
+  "SelectReport": {
+    "select-placeholder": "Select a Report"
+  },
+  "BtrModal": {
+    "btn-modal-dl": "¿Download report?",
+    "btn-modal-sr": "Select a report",
+    "btn-modal-ok-text": "Ok",
+    "btn-modal-cancel-text": "Cancel"
+  },
+  "CustomeTable": {
+    "table-page": "page"
+  },
+  "Header": {
+    "report": "Reports",
+    "dashboard": "Dashboard",
+    "KPIs": "KPIs"
+  }
+}

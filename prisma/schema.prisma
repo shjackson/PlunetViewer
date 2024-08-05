@@ -1,0 +1,106 @@
+// schema.prisma
+
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "debian-openssl-3.0.x"]
+}
+
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("POSTGRES_PRISMA_URL") // uses connection pooling
+  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
+}
+
+model Order {
+  orderID           BigInt    @id
+  currency          String?
+  customerContactID BigInt
+  deliveryDeadline  DateTime?
+  orderClosingDate  DateTime?
+  orderDate         DateTime?
+  orderDisplayName  String?
+  projectManagerID  BigInt
+  projectName       String?
+  rate              Decimal
+  requestID         BigInt
+  subject           String?
+  customer          Customer? @relation(fields: [customerID], references: [customerID])
+  customerID        BigInt?
+  //Item              Item[]
+  businessUnit      String?
+}
+
+model Customer {
+  customerID    BigInt  @id
+  academicTitle String?
+  costCenter    String?
+  currency      String?
+  email         String?
+  externalID    String?
+  fax           String?
+  formOfAddress BigInt?
+  fullName      String?
+  mobilePhone   String?
+  name1         String?
+  name2         String?
+  opening       String?
+  phone         String?
+  skypeID       String?
+  status        BigInt
+  userId        BigInt
+  website       String?
+  Order         Order[]
+}
+
+model Item {
+  itemID           BigInt    @id
+  briefDescription String?
+  comment          String?
+  deliveryDeadline DateTime?
+  invoiceID        BigInt
+//  order            Order?    @relation(fields: [orderID], references: [orderID])
+  orderID          BigInt
+  projectID        BigInt
+  projectType      BigInt
+  reference        String?
+  sourceLanguage   String?
+  status           BigInt
+  targetLanguage   String?
+  totalPrice       Decimal
+  Job              Job[]
+}
+
+model Job {
+  jobID                 BigInt    @id
+  countSourceFiles      BigInt?
+  dueDate               DateTime?
+  item                  Item?     @relation(fields: [itemID], references: [itemID])
+  itemID                BigInt
+  jobTypeFull           String?
+  jobTypeShort          String?
+  orderID               BigInt?
+  projectID             BigInt?
+  projectType           BigInt?
+  resourceID            BigInt?
+  startDate             DateTime?
+  status                BigInt?
+  totalPrice            Decimal?
+  totalPriceJobCurrency Decimal?
+  Amount                Amount[]
+}
+
+model Amount {
+  amountID      BigInt  @id @default(autoincrement())
+  job           Job?    @relation(fields: [jobID], references: [jobID])
+  jobID         BigInt
+  baseUnitName  String?
+  grossQuantity String?
+  netQuantity   String?
+  serviceType   String?
+}
+
+model SoapEvent {
+  eventID       BigInt  @id @default(autoincrement())
+  data          String
+}

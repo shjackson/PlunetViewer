@@ -1,0 +1,31 @@
+<xs:schema xmlns:tns="http://API.Integration/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://API.Integration/">
+<xs:complexType name="SearchFilter_Job">
+<xs:sequence>
+<xs:element name="customerID" type="xs:int" default="-1"/>
+<xs:element name="item_Status" type="xs:int" default="-1"/>
+<xs:element name="job_CreationDate_from" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="job_CreationDate_to" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="job_SourceLanguage" type="xs:string" default="" minOccurs="0"/>
+<xs:element name="job_Status" type="xs:int" default="-1"/>
+<xs:element name="job_TargetLanguage" type="xs:string" default="" minOccurs="0"/>
+<xs:element name="job_resourceID" type="xs:int" default="-1"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="IntegerArrayResult">
+<xs:complexContent>
+<xs:extension base="tns:Result">
+<xs:sequence>
+<xs:element name="data" type="xs:int" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+<xs:complexType name="Result">
+<xs:sequence>
+<xs:element name="statusCode" type="xs:int"/>
+<xs:element name="statusCodeAlphanumeric" type="xs:string" minOccurs="0"/>
+<xs:element name="statusMessage" type="xs:string" minOccurs="0"/>
+<xs:element name="warning_StatusCodeList" type="xs:int" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,26 @@
+<S:Envelope xmlns:S="http://www.w3.org/2003/05/soap-envelope">
+   <S:Body>
+      <ns2:getOrderObjectListResponse xmlns:ns2="http://API.Integration/">
+         <OrderListResult>
+            <statusCode>0</statusCode>
+            <statusCodeAlphanumeric>GEN_1</statusCodeAlphanumeric>
+            <statusMessage>OK</statusMessage>
+            <data>
+               <currency>USD</currency>
+               <customerContactID>2439</customerContactID>
+               <customerID>406</customerID>
+               <deliveryDeadline>2023-05-22T10:30:00-03:00</deliveryDeadline>
+               <orderClosingDate>2023-08-08T12:10:32-03:00</orderClosingDate>
+               <orderDate>2023-05-22T01:20:00-03:00</orderDate>
+               <orderDisplayName>O-23-12642</orderDisplayName>
+               <orderID>2247213</orderID>
+               <projectManagerID>2308</projectManagerID>
+               <projectName>Project#: 988400 - Fairfax County - NCS - Office for Children (OFC) - English to Korean - TR_OTHER &amp; ED - New Work Request: 2790399</projectName>
+               <rate>1.0</rate>
+               <requestID>0</requestID>
+               <subject/>
+            </data>
+         </OrderListResult>
+      </ns2:getOrderObjectListResponse>
+   </S:Body>
+</S:Envelope>

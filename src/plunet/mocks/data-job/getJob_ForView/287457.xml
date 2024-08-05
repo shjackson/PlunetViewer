@@ -1,0 +1,24 @@
+<S:Envelope xmlns:S="http://www.w3.org/2003/05/soap-envelope">
+   <S:Body>
+      <ns2:getJob_ForViewResponse xmlns:ns2="http://API.Integration/">
+         <JobResult>
+            <statusCode>0</statusCode>
+            <statusCodeAlphanumeric>GEN_1</statusCodeAlphanumeric>
+            <statusMessage>OK</statusMessage>
+            <data>
+               <countSourceFiles>0</countSourceFiles>
+               <dueDate>2023-05-23T11:00:00-03:00</dueDate>
+               <itemID>161156</itemID>
+               <jobID>287457</jobID>
+               <jobTypeFull>Translation</jobTypeFull>
+               <jobTypeShort>TRA</jobTypeShort>
+               <projectID>2247303</projectID>
+               <projectType>3</projectType>
+               <resourceID>2139</resourceID>
+               <startDate>2023-05-23T05:00:00-03:00</startDate>
+               <status>6</status>
+            </data>
+         </JobResult>
+      </ns2:getJob_ForViewResponse>
+   </S:Body>
+</S:Envelope>

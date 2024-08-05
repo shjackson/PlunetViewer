@@ -1,0 +1,26 @@
+<S:Envelope xmlns:S="http://www.w3.org/2003/05/soap-envelope">
+   <S:Body>
+      <ns2:getItemObjectResponse xmlns:ns2="http://API.Integration/">
+         <ItemResult>
+            <statusCode>0</statusCode>
+            <statusCodeAlphanumeric>GEN_1</statusCodeAlphanumeric>
+            <statusMessage>OK</statusMessage>
+            <data>
+               <briefDescription>English (United States)/Spanish (United States) - O-24862-Interfaith Power &amp; Light</briefDescription>
+               <deliveryDeadline>2023-02-14T17:00:00-03:00</deliveryDeadline>
+               <invoiceID>9270</invoiceID>
+               <itemID>146948</itemID>
+               <jobIDList>266986</jobIDList>
+               <jobIDList>266987</jobIDList>
+               <orderID>0</orderID>
+               <projectID>2238103</projectID>
+               <projectType>3</projectType>
+               <sourceLanguage>English (United States)</sourceLanguage>
+               <status>9</status>
+               <targetLanguage>Spanish (United States)</targetLanguage>
+               <totalPrice>21.9</totalPrice>
+            </data>
+         </ItemResult>
+      </ns2:getItemObjectResponse>
+   </S:Body>
+</S:Envelope>

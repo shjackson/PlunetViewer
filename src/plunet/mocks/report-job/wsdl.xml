@@ -1,0 +1,37 @@
+<definitions xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://API.Integration/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://API.Integration/" name="ReportJob30Service">
+<types>
+<xsd:schema>
+<xsd:import namespace="http://API.Integration/" schemaLocation="https://plunet.tbo.group/ReportJob30?xsd=1"/>
+</xsd:schema>
+</types>
+<message name="search">
+<part name="UUID" type="xsd:string"/>
+<part name="SearchFilter_Job" type="tns:SearchFilter_Job"/>
+</message>
+<message name="searchResponse">
+<part name="IntegerArrayResult" type="tns:IntegerArrayResult"/>
+</message>
+<portType name="ReportJob30">
+<operation name="search" parameterOrder="UUID SearchFilter_Job">
+<input wsam:Action="http://API.Integration/ReportJob30/searchRequest" message="tns:search"/>
+<output wsam:Action="http://API.Integration/ReportJob30/searchResponse" message="tns:searchResponse"/>
+</operation>
+</portType>
+<binding name="ReportJob30PortBinding" type="tns:ReportJob30">
+<soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc"/>
+<operation name="search">
+<soap12:operation soapAction=""/>
+<input>
+<soap12:body use="literal" namespace="http://API.Integration/"/>
+</input>
+<output>
+<soap12:body use="literal" namespace="http://API.Integration/"/>
+</output>
+</operation>
+</binding>
+<service name="ReportJob30Service">
+<port name="ReportJob30Port" binding="tns:ReportJob30PortBinding">
+<soap12:address location="https://plunet.tbo.group/ReportJob30"/>
+</port>
+</service>
+</definitions>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<S:Envelope xmlns:S="http://www.w3.org/2003/05/soap-envelope">
+    <S:Body>
+        <ns2:loginResponse xmlns:ns2="http://API.Integration/">
+            <return>777cd81a-29a7-4e34-ae61-d17229e0f61b</return>
+        </ns2:loginResponse>
+    </S:Body>
+</S:Envelope>

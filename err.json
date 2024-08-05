@@ -1,0 +1,23 @@
+{
+  "props": {
+    "pageProps": {
+      "statusCode": 500
+    }
+  },
+  "page": "/_error",
+  "query": {
+    "reportType": "margins",
+    "startDate": "2024-05-12",
+    "endDate": "2024-05-32"
+  },
+  "buildId": "development",
+  "isFallback": false,
+  "err": {
+    "name": "RangeError",
+    "source": "server",
+    "message": "Invalid status code: undefined",
+    "stack": "RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: undefined\n    at ServerResponse.writeHead (node:_http_server:352:11)\n    at ServerResponse.writeHead (C:\\Users\\juanj\\dev\\repos\\tbo\\tutorias\\node_modules\\next\\dist\\compiled\\compression\\index.js:46:263)\n    at ServerResponse._implicitHeader (node:_http_server:338:8)\n    at ServerResponse.end (C:\\Users\\juanj\\dev\\repos\\tbo\\tutorias\\node_modules\\next\\dist\\compiled\\compression\\index.js:22:749)\n    at K.t.end (C:\\Users\\juanj\\dev\\repos\\tbo\\tutorias\\node_modules\\next\\dist\\compiled\\next-server\\pages-api.runtime.dev.js:20:13859)\n    at C:\\Users\\juanj\\dev\\repos\\tbo\\tutorias\\node_modules\\next\\dist\\compiled\\next-server\\pages-api.runtime.dev.js:21:653\n    at K.t.send (C:\\Users\\juanj\\dev\\repos\\tbo\\tutorias\\node_modules\\next\\dist\\compiled\\next-server\\pages-api.runtime.dev.js:21:662)\n    at K.t.json (C:\\Users\\juanj\\dev\\repos\\tbo\\tutorias\\node_modules\\next\\dist\\compiled\\next-server\\pages-api.runtime.dev.js:21:745)\n    at handler (webpack-internal:///(api)/./src/pages/api/report.tsx:42:32)\n    at K (C:\\Users\\juanj\\dev\\repos\\tbo\\tutorias\\node_modules\\next\\dist\\compiled\\next-server\\pages-api.runtime.dev.js:21:2877)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async U.render (C:\\Users\\juanj\\dev\\repos\\tbo\\tutorias\\node_modules\\next\\dist\\compiled\\next-server\\pages-api.runtime.dev.js:21:3955)\n    at async DevServer.runApi (C:\\Users\\juanj\\dev\\repos\\tbo\\tutorias\\node_modules\\next\\dist\\server\\next-server.js:600:9)\n    at async NextNodeServer.handleCatchallRenderRequest (C:\\Users\\juanj\\dev\\repos\\tbo\\tutorias\\node_modules\\next\\dist\\server\\next-server.js:269:37)\n    at async DevServer.handleRequestImpl (C:\\Users\\juanj\\dev\\repos\\tbo\\tutorias\\node_modules\\next\\dist\\server\\base-server.js:816:17)"
+  },
+  "gip": true,
+  "scriptLoader": []
+}
