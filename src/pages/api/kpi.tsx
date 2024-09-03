@@ -224,61 +224,61 @@ export default async function handler(
         if (process.env['MOCKED_DATA']) {
           result = [
             {
-              "id": "Client 1",
+              "id": "Red Mars Corp.",
               "billing": "1453111",
               "cost": "5477.3",
               "margin": "0.97"
             },
             {
-              "id": "Client 2",
+              "id": "Al Kitaab",
               "billing": "1146333",
               "cost": "3877.92",
               "margin": "0.98"
             },
             {
-              "id": "Client 3",
+              "id": "Future Publishing Inc.",
               "billing": "1034562",
               "cost": "12699.66",
               "margin": "0.91"
             },
             {
-              "id": "Client 4",
+              "id": "Interface Lingo",
               "billing": "789333",
               "cost": "18375.13",
               "margin": "0.78"
             },
             {
-              "id": "Client 5",
+              "id": "LSP International",
               "billing": "626745",
               "cost": "1457.59",
               "margin": "0.94"
             },
             {
-              "id": "Client 6",
+              "id": "Humanitarian NGO",
               "billing": "203692",
               "cost": "2929.07",
               "margin": "0.87"
             },
             {
-              "id": "Client 7",
+              "id": "Design Tech S.A.",
               "billing": "125000",
               "cost": "5431.4",
               "margin": "0.75"
             },
             {
-              "id": "Client 8",
+              "id": "Guttenberg UX",
               "billing": "49400",
               "cost": "1764.41",
               "margin": "0.91"
             },
             {
-              "id": "Client 9",
+              "id": "Beyond Borders",
               "billing": "35936",
               "cost": "2998.24",
               "margin": "0.78"
             },
             {
-              "id": "Client 10",
+              "id": "TEP Agency",
               "billing": "29000",
               "cost": "2483.35",
               "margin": "0.81"
